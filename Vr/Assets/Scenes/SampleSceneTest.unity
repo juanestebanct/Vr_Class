@@ -123,7 +123,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 1049230c2cab8c3478c223d357aed116, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 1b7eb726a74f42943894be076a216c6d, type: 2}
 --- !u!1 &17807851
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,17 +471,17 @@ PrefabInstance:
     - target: {fileID: 7306226528345795301, guid: 93957ea7528e54a4b9423ae2765da59b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.533586
+      value: 14.14
       objectReference: {fileID: 0}
     - target: {fileID: 7306226528345795301, guid: 93957ea7528e54a4b9423ae2765da59b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.48
       objectReference: {fileID: 0}
     - target: {fileID: 7306226528345795301, guid: 93957ea7528e54a4b9423ae2765da59b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.965157
+      value: -18.83
       objectReference: {fileID: 0}
     - target: {fileID: 7306226528345795301, guid: 93957ea7528e54a4b9423ae2765da59b,
         type: 3}
@@ -9001,7 +9001,7 @@ PrefabInstance:
     - target: {fileID: 1240499430633233035, guid: 691f345e770535b42a82a868c6135877,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 1240499430633233035, guid: 691f345e770535b42a82a868c6135877,
         type: 3}
@@ -9067,6 +9067,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466746087685983425, guid: 691f345e770535b42a82a868c6135877,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5466746087873598815, guid: 691f345e770535b42a82a868c6135877,
         type: 3}
