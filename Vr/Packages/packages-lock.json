@@ -330,11 +330,11 @@
       "url": "https://registry.npmjs.org"
     },
     "io.extendreality.tilia.interactions.interactables.unity": {
-      "version": "2.10.0",
+      "version": "2.16.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "io.extendreality.zinnia.unity": "2.6.0"
+        "io.extendreality.zinnia.unity": "2.12.1"
       },
       "url": "https://registry.npmjs.org"
     },
@@ -362,6 +362,17 @@
       },
       "url": "https://registry.npmjs.org"
     },
+    "io.extendreality.tilia.locomotors.climbing.unity": {
+      "version": "2.3.24",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "io.extendreality.zinnia.unity": "2.12.1",
+        "io.extendreality.tilia.trackers.pseudobody.unity": "2.1.56",
+        "io.extendreality.tilia.interactions.interactables.unity": "2.16.2"
+      },
+      "url": "https://registry.npmjs.org"
+    },
     "io.extendreality.tilia.locomotors.teleporter.unity": {
       "version": "2.1.0",
       "depth": 0,
@@ -373,11 +384,11 @@
       "url": "https://registry.npmjs.org"
     },
     "io.extendreality.tilia.mutators.collisionignorer.unity": {
-      "version": "2.0.4",
-      "depth": 0,
+      "version": "2.0.16",
+      "depth": 2,
       "source": "registry",
       "dependencies": {
-        "io.extendreality.zinnia.unity": "2.3.0"
+        "io.extendreality.zinnia.unity": "2.12.1"
       },
       "url": "https://registry.npmjs.org"
     },
@@ -391,13 +402,13 @@
       "url": "https://registry.npmjs.org"
     },
     "io.extendreality.tilia.trackers.pseudobody.unity": {
-      "version": "2.1.6",
-      "depth": 0,
+      "version": "2.1.56",
+      "depth": 1,
       "source": "registry",
       "dependencies": {
-        "io.extendreality.zinnia.unity": "2.3.0",
-        "io.extendreality.tilia.mutators.collisionignorer.unity": "2.0.4",
-        "io.extendreality.tilia.interactions.interactables.unity": "2.7.0"
+        "io.extendreality.zinnia.unity": "2.12.1",
+        "io.extendreality.tilia.mutators.collisionignorer.unity": "2.0.16",
+        "io.extendreality.tilia.interactions.interactables.unity": "2.16.2"
       },
       "url": "https://registry.npmjs.org"
     },
@@ -452,7 +463,7 @@
       "url": "https://registry.npmjs.org"
     },
     "io.extendreality.zinnia.unity": {
-      "version": "2.8.0",
+      "version": "2.12.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
