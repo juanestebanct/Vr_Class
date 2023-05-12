@@ -7,7 +7,8 @@ public class ChangeLevel : MonoBehaviour
     public GameObject ObjecTp;
     public GameObject TpZone;
     public int CountLevel;
- 
+
+    
 
     public void OnTp()
     {
