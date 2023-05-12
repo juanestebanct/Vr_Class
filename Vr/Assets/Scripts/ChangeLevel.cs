@@ -15,6 +15,7 @@ public class ChangeLevel : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        ObjecTp.SetActive(false);
         OnTp();
         Debug.Log("tp");
         if (CountLevel==2)
@@ -22,5 +23,6 @@ public class ChangeLevel : MonoBehaviour
             TimerExit.Instance.StarTime = true;
             Debug.Log("Inicia el cronometro");
         }
+        ObjecTp.SetActive(true);
     }
 }
