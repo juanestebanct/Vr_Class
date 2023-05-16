@@ -1553,12 +1553,12 @@ PrefabInstance:
     - target: {fileID: 6759483569300406686, guid: 52f87534fdefc6b47aadeae3a66454d8,
         type: 3}
       propertyPath: Teleporting.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6759483569300406686, guid: 52f87534fdefc6b47aadeae3a66454d8,
         type: 3}
       propertyPath: Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6759483569300406686, guid: 52f87534fdefc6b47aadeae3a66454d8,
         type: 3}
@@ -1569,6 +1569,26 @@ PrefabInstance:
         type: 3}
       propertyPath: Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759483569300406686, guid: 52f87534fdefc6b47aadeae3a66454d8,
+        type: 3}
+      propertyPath: Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Teleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759483569300406686, guid: 52f87534fdefc6b47aadeae3a66454d8,
+        type: 3}
+      propertyPath: Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Tilia.Locomotors.Teleporter.TeleporterFacade, Tilia.Locomotors.Teleporter.Unity.Runtime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759483569300406686, guid: 52f87534fdefc6b47aadeae3a66454d8,
+        type: 3}
+      propertyPath: Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2066977522}
+    - target: {fileID: 6759483569300406686, guid: 52f87534fdefc6b47aadeae3a66454d8,
+        type: 3}
+      propertyPath: Teleporting.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Transform, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8762128706450136148, guid: 52f87534fdefc6b47aadeae3a66454d8,
         type: 3}
@@ -6061,6 +6081,10 @@ MonoBehaviour:
   ObjecTp: {fileID: 1588377666}
   TpZone: {fileID: 588421993}
   CountLevel: 2
+  tpfacade: {fileID: 0}
+  OnColliderEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &285943024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10539,6 +10563,10 @@ MonoBehaviour:
   ObjecTp: {fileID: 1588377666}
   TpZone: {fileID: 2066977521}
   CountLevel: 1
+  tpfacade: {fileID: 0}
+  OnColliderEnter:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &609980191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25003,9 +25031,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474f453937800634aa24a81e7f99d15b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjecTp: {fileID: 1588377666}
+  ObjecTp: {fileID: 1359516697}
   TpZone: {fileID: 2066977521}
   CountLevel: 1
+  tpfacade: {fileID: 0}
+  OnColliderEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 87347618}
+        m_TargetAssemblyTypeName: Tilia.Locomotors.Teleporter.TeleporterFacade, Tilia.Locomotors.Teleporter.Unity.Runtime
+        m_MethodName: Teleport
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2066977522}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1485367670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32509,7 +32553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1940483066
 Transform:
   m_ObjectHideFlags: 0
