@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ignite
   - Box
+  - Jar
   layers:
   - Default
   - TransparentFX

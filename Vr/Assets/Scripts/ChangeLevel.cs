@@ -17,8 +17,8 @@ public class ChangeLevel : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        
-        OnTp();
+        OnColliderEnter.Invoke();
+        //OnTp();
         Debug.Log("tp");
         if (CountLevel==2)
         {
