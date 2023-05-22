@@ -15,7 +15,7 @@ public class Punch : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
        
-        if ( collision.gameObject.tag == "Destroider" && (Magnitud)>8)
+        if ( collision.gameObject.tag == "Destroider" && (Magnitud)>6)
         {
             Debug.Log("destroy this object");
             collision.gameObject.GetComponent<Broken>().DestroyObject();
