@@ -51,4 +51,8 @@ public class TimerExit : MonoBehaviour
 
         Timer.text = mmssTime;
     }
+    public void StarToTime()
+    {
+        StarTime = true;
+    }
 }
