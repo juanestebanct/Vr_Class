@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class TimerExit : MonoBehaviour
 {
     public TextMeshProUGUI Timer;
+    public TextMeshProUGUI WinText;
     public float matchTimer;
 
      public static TimerExit Instance;
@@ -30,6 +31,7 @@ public class TimerExit : MonoBehaviour
             UpdateMatchTimeDisplay(Mathf.Clamp(matchTimer, 0, 99999));
             if (matchTimer <=0)
             {
+                SceneManager.LoadScene(1);
                 hasEnded = true;
                 Debug.Log("se acabo");
             }
@@ -54,5 +56,12 @@ public class TimerExit : MonoBehaviour
     public void StarToTime()
     {
         StarTime = true;
+    }
+    public void Win()
+    {
+        StarTime = false;
+
+        WinText.text = "Lograste escapar del hospital " +
+            "";
     }
 }
