@@ -31,7 +31,7 @@ public class Buttom : MonoBehaviour
 
     IEnumerator ChangeColor()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(60f);
         if (!EndPusle)
         {
             Active = false;
